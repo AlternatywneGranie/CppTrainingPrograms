@@ -1,0 +1,14 @@
+//Create an integer vector and add 10 numbers from 1 to 10 using a for loop.
+
+#include <iostream>
+#include <vector>
+
+int main() {
+	std::vector<int> liczby;
+	
+	for (int i = 1; i <= 10; i++) {
+		liczby.push_back(1);
+	}
+	std::cout << liczby.size()<< std::endl;
+	return 0;
+}
