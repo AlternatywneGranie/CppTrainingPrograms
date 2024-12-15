@@ -1,0 +1,21 @@
+//Declare an empty string vector, add 3 names to it, and then remove the last name.
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main() {
+	std::vector<std::string> imiona = { "Dawid", "Jagoda", "Maja" };
+	std::cout << "Pierwotne elementy wektora: ";
+	for (const auto& elem : imiona) {
+		std::cout << elem << " ";
+	}
+	std::cout << std::endl;
+	std::cout << "Zmodyfikowane elementy wektora: ";
+	imiona.pop_back();
+	for (const auto& elem : imiona) {
+		std::cout << elem << " ";
+	}
+	std::cout << std::endl;
+	return 0;
+}
